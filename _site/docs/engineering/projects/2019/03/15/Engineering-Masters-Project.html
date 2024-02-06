@@ -1,0 +1,40 @@
+<!-- # RoboChess Project -->
+
+<h3 id="project-summary">Project Summary:</h3>
+<p>This was a solo project undertaken to automate the task of raising and lowering bedroom blinds. This was completed with simply using two lasers and photo-sensitive resistors to accurately measure the binary state of the blind position. A DC motor and driver were fitted inside of the blind for discrete actuation, and a simple arduino script was used for logic.</p>
+
+<p>Although not the most technically complex project in the list, this is significant for its reliability and longevity. It has been changing state twice per day for 5 years with no need for maintenance so far!</p>
+
+<h3 id="gallery-and-code">Gallery and Code</h3>
+<div style="display: flex; flex-wrap: wrap;">
+    <img src="/assets/Blinds/Blind1.jpeg" alt="Farm V1" style="flex: 1; max-width: 50%;" />
+    <img src="/assets/Blinds/Blind2.jpeg" alt="Farm V2" style="flex: 1; max-width: 50%;" />
+</div>
+
+<p><br />
+<em>Simple arduino logic:</em></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void loop() {
+  if (digitalRead(UpButton) == LOW){
+    digitalWrite(TopLaserPin, HIGH);
+    while (analogRead(TopLDR) &lt; 950){
+      Serial.println(analogRead(TopLDR));
+      digitalWrite (MotorOut1, LOW);
+      digitalWrite (MotorOut2, HIGH);
+    }
+    digitalWrite (MotorOut1, LOW);
+    digitalWrite (MotorOut2, LOW);
+    digitalWrite (TopLaserPin, LOW);
+  }
+  if (digitalRead(DownButton) == LOW){
+    digitalWrite(BottomLaserPin, HIGH);
+    while (analogRead(BottomLDR) &gt; 900){
+      Serial.println(analogRead(BottomLDR));
+      digitalWrite (MotorOut1, HIGH);
+      digitalWrite (MotorOut2, LOW);
+    }
+    digitalWrite(BottomLaserPin, LOW);
+    digitalWrite (MotorOut1, LOW);
+    digitalWrite (MotorOut2, LOW);
+  }
+}
+</code></pre></div></div>

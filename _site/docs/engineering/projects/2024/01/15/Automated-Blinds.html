@@ -1,0 +1,52 @@
+<!-- # RoboChess Project -->
+
+<h3 id="project-summary">Project Summary:</h3>
+<p>The aim of this project is to develop a Desktop FDM hybrid machine to do both additive and subtractive manufacturing. This has been realised in the form of a modified IDEX machine with one additive tool (Hemera extruder) and one subtractive tool (CNC spindle). With only 3 axes, this system would be very limited in geometry which could be CNC milled. This is why 5-axes have been implemented by adding 2 additional rotation axes to the bed (one with axis parallel to y-axis and the other with axis parallel to z-axis), pictured below:</p>
+
+<div style="display: flex; flex-wrap: wrap;">
+    <img src="/assets/Masters/MachineCAD1.png" alt="Farm V1" style="flex: 1; max-width: 44%;" />
+    <img src="/assets/Masters/MachineCAD2.png" alt="Farm V2" style="flex: 1; max-width: 56%;" />
+</div>
+
+<h3 id="current-project-state">Current Project State</h3>
+<p>At present, the machine has been fully built and calibrated. All 5 axes are functional, and moves are controlled using GCODE via standard open-source printer hardware. The milling and additive head are independently controllable and can be swapped in and out of use (each using a slightly offset coordinate system). A stiffer gantry has been fitted to the machine, and the process has started for calibrating optimal CNC parameters. The machine has a ‘digital twin’ which can be used for generating 5-axis milling toolpaths and collision detection.</p>
+
+<div style="display: flex; flex-wrap: wrap;">
+    <img src="/assets/Masters/Benchy.jpg" alt="Farm V1" style="flex: 1; max-width: 50%;" />
+    <img src="/assets/Masters/Machine.jpg" alt="Farm V2" style="flex: 1; max-width: 50%;" />
+</div>
+
+<h3 id="outstanding-goals">Outstanding Goals</h3>
+<p>The future goals for the project are the following:</p>
+<ul>
+  <li>Use Fusion to generate 3+2-axis milling toolpaths, and write post-processing script to combine with additive GCODE</li>
+  <li>Write algorithm to generate optimal placements for model cuts to</li>
+</ul>
+
+<p><br />
+<em>Simple arduino logic:</em></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void loop() {
+  if (digitalRead(UpButton) == LOW){
+    digitalWrite(TopLaserPin, HIGH);
+    while (analogRead(TopLDR) &lt; 950){
+      Serial.println(analogRead(TopLDR));
+      digitalWrite (MotorOut1, LOW);
+      digitalWrite (MotorOut2, HIGH);
+    }
+    digitalWrite (MotorOut1, LOW);
+    digitalWrite (MotorOut2, LOW);
+    digitalWrite (TopLaserPin, LOW);
+  }
+  if (digitalRead(DownButton) == LOW){
+    digitalWrite(BottomLaserPin, HIGH);
+    while (analogRead(BottomLDR) &gt; 900){
+      Serial.println(analogRead(BottomLDR));
+      digitalWrite (MotorOut1, HIGH);
+      digitalWrite (MotorOut2, LOW);
+    }
+    digitalWrite(BottomLaserPin, LOW);
+    digitalWrite (MotorOut1, LOW);
+    digitalWrite (MotorOut2, LOW);
+  }
+}
+</code></pre></div></div>
