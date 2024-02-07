@@ -21,7 +21,7 @@
 title: Oliver Brewster Portfolio
 email: oliver.brewster@hertford.ox.ac.uk
 description: >- # this means to ignore newlines until "baseurl:"
-  All my engineering projects in 1 place! Thanks for visiting :)
+  Notable engineering project in one place!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  OliverBrewster

@@ -6,9 +6,9 @@ categories: Engineering Projects
 ---
 
 ### Project Summary:
-This was a solo project undertaken to automate the task of raising and lowering bedroom blinds. This was completed with simply using two lasers and photo-sensitive resistors to accurately measure the binary state of the blind position. A DC motor and driver were fitted inside of the blind for discrete actuation, and a simple arduino script was used for logic.
+This was a solo project undertaken to automate the task of raising and lowering bedroom blinds. This was completed by simply using two lasers and photo-sensitive resistors to accurately measure the binary state of the blind position. A DC motor and driver were fitted inside of the blind for discrete actuation, and a simple Arduino script was used for logic.
 
-Although not the most technically complex project in the list, this is significant for its reliability and longevity. It has been changing state twice per day for 5 years with no need for maintenance so far!
+Although not the most technically complex project on the list, this is significant for its reliability and longevity. It has been changing state twice per day for 5 years with no need for maintenance so far!
 
 
 ### Gallery and Code
@@ -18,7 +18,7 @@ Although not the most technically complex project in the list, this is significa
 </div>
 
 \
-*Simple arduino logic:*
+*Simple Arduino logic:*
 ```
 void loop() {
   if (digitalRead(UpButton) == LOW){
