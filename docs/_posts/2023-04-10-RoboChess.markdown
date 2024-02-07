@@ -33,9 +33,10 @@ I proposed and led this project for a full year with the Robotics and Additive M
     <img src="/assets/RoboChess/TheTeam.jpg" alt="RoboChess Team" style="flex: 1; max-width: 50%;" />
     <img src="/assets/RoboChess/YouTube.png" alt="YouTube feature" style="flex: 1; max-width: 50%;" />
 </div>
+
 ![Single Image](/assets/RoboChess/EarlyTest.gif)
 
 <div style="display: flex; flex-wrap: wrap;">
-    <img src="/assets/RoboChess/Mech2.png" alt="RoboChess Team" style="flex: 1; max-width: 50%;" />
-    <img src="/assets/RoboChess/Mech1.png" alt="YouTube feature" style="flex: 1; max-width: 50%;" />
+    <img src="/assets/RoboChess/Mech2.PNG" alt="RoboChess Team" style="flex: 1; max-width: 50%;" />
+    <img src="/assets/RoboChess/Mech1.PNG" alt="YouTube feature" style="flex: 1; max-width: 50%;" />
 </div>
