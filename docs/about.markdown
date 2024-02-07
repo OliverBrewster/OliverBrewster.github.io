@@ -20,8 +20,8 @@ Email: <b><a href="mailto:oliver.brewster@hertford.ox.ac.uk">oliver.brewster@her
 \
 Phone: <b><a href="tel:07375566668">07375566668</a><b>
 <div style="display: flex; flex-wrap: wrap;">
-    <img src="/assets/About/R2D2.JPG" alt="R2D2" style="flex: 1; max-width: 50%;" />
-    <img src="/assets/About/OxRAM.JPG" alt="OxRAM stand at SMRRF" style="flex: 1; max-width: 50%;" />
+    <img src="/assets/About/R2D2.jpg" alt="R2D2" style="flex: 1; max-width: 50%;" />
+    <img src="/assets/About/OxRAM.jpg" alt="OxRAM stand at SMRRF" style="flex: 1; max-width: 50%;" />
 </div>
 <span style="color:grey">
 (Images from a recent RepRap festival in Oxford!)
