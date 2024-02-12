@@ -37,6 +37,6 @@ I proposed and led this project for a full year with the Robotics and Additive M
 ![Single Image](/assets/RoboChess/EarlyTest.gif)
 
 <div style="display: flex; flex-wrap: wrap;">
-    <img src="/assets/RoboChess/Mech2.png" alt="Mechanism 1" style="flex: 1; max-width: 50%;" />
-    <img src="/assets/RoboChess/Mech1.png" alt="Mechanism 2" style="flex: 1; max-width: 50%;" />
+    <img src="/assets/RoboChess/Mech2.PNG" alt="Mechanism 1" style="flex: 1; max-width: 50%;" />
+    <img src="/assets/RoboChess/Mech1.PNG" alt="Mechanism 2" style="flex: 1; max-width: 50%;" />
 </div>
