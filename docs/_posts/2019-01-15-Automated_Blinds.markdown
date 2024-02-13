@@ -12,9 +12,9 @@ Although not the most technically complex project on the list, this is significa
 
 
 ### Gallery and Code
-<div style="display: flex; flex-wrap: wrap;">
-    <img src="/assets/Blinds/Blind1.jpeg" alt="Farm V1" style="flex: 1; max-width: 50%;" />
-    <img src="/assets/Blinds/Blind2.jpeg" alt="Farm V2" style="flex: 1; max-width: 50%;" />
+<div style="display: grid; grid-template-columns: 1fr 1fr;">
+  <img src="/assets/Blinds/Blind1.jpeg" alt="Blinds 1" style="max-width: 100%;">
+  <img src="/assets/Blinds/Blind2.jpeg" alt="Blinds 2" style="max-width: 100%;">
 </div>
 
 \

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Algorithms for Regression and Binary Classification"
-date:   2024-01-14 09:32:26 +0000
+date:   2022-12-20 09:32:26 +0000
 categories: Engineering Projects
 ---
 <!-- # RoboChess Project -->
@@ -20,7 +20,7 @@ The results between algorithms agreed to within a very small margin, with logist
 
 The following shows how classification error changes for different batch sizes with stochastic gradient descent and a visual proof of the algorithm's success!
 
-<div style="display: flex; flex-wrap: wrap;">
-    <img src="/assets/B1/ClassifErrorAll.jpg" alt="Classification error SGD" style="flex: 1; max-width: 70%;" />
-    <img src="/assets/B1/DecisionLine.jpg" alt="Decision line produced" style="flex: 1; max-width: 30%;" />
+<div style="display: grid; grid-template-columns: 0.7fr 0.3fr;">
+  <img src="/assets/B1/ClassifErrorAll.jpg" alt="Classification error SGD" style="max-width: 100;">
+  <img src="/assets/B1/DecisionLine.jpg" alt="Decision line produced" style="max-width: 100%;">
 </div>

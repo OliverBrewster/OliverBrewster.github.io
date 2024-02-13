@@ -12,9 +12,9 @@ This project is the development log of my 3D printing farm which was used to bui
 - Configuring OctoPrint servers to manage the distribution of up-to-date GCODES across all machines. Added benefit of being able to manage all the printers remotely.
 - Automated shipping label printing, and system for inventory management to ensure minimal stock was kept of each product.
 
-<div style="display: flex; flex-wrap: wrap;">
-    <img src="/assets/PrintFarm/FarmV1.gif" alt="Farm V1" style="flex: 1; max-width: 50%;" />
-    <img src="/assets/PrintFarm/FarmV2.gif" alt="Farm V2" style="flex: 1; max-width: 50%;" />
+<div style="display: grid; grid-template-columns: 1fr 1fr;">
+  <img src="/assets/PrintFarm/FarmV1.gif" alt="Farm V1" style="max-width: 100%;">
+  <img src="/assets/PrintFarm/FarmV2.gif" alt="Farm V2" style="max-width: 100%;">
 </div>
 
 ### How it happened:
@@ -22,9 +22,9 @@ In 2020, I purchased my first 3D printer (a knackered Anet A8) for £65. Within 
 
 After a little while I saw the potential for prints to be commercialised, and started printing and selling my original designs on eBay (and eventually Etsy). The need for machine capacity led me to get another Anet A8 forming the initial (and small!) print farm just as COVID gripped and free time became in abundance.
 
-<div style="display: flex; flex-wrap: wrap;">
-    <img src="/assets/PrintFarm/EarlyFarm.jpg" alt="RoboChess Team" style="flex: 1; max-width: 35%;" />
-    <img src="/assets/PrintFarm/FirstPrint.jpg" alt="RoboChess Team" style="flex: 1; max-width: 65%;" />
+<div style="display: grid; grid-template-columns: 0.3656fr 0.65fr;">
+  <img src="/assets/PrintFarm/EarlyFarm.jpg" alt="Start of the print farm" style="max-width: 100%;">
+  <img src="/assets/PrintFarm/FirstPrint.jpg" alt="Print farm final form" style="max-width: 100%;">
 </div>
 
 Many months of iterating continued as I tested various FDM machines and benchmarked their performance and reliability, debugging a host of issues. Production on the farm was streamlined as I installed OctoPrint servers on each printer to allow easy distribution of GCODEs to the growing selection of printers. Production GCODEs were optimised to systematically decrement print times within the limit of each printer.

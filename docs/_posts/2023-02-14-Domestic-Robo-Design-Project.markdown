@@ -14,8 +14,8 @@ The different sub-systems of the robot were distributed between members, with me
 #### Aesthetic Design
 This involved a CAD mock-up of the robot which was non-imposing while also enabling the complete functionality we had set for the robot. The final design is below:
 
-<div style="display: flex; flex-wrap: wrap;">
-    <img src="/assets/3YP/BILLY.png" alt="Domestic Care Robot, BILLY" style="flex: 1; max-width: 65%;" />
+<div style="display: grid; grid-template-columns: 1fr;">
+  <img src="/assets/3YP/BILLY.png" alt="Domestic Care Robot, BILLY" style="max-width: 65%;">
 </div>
 
 
@@ -25,20 +25,23 @@ A feature proposed for this project was the ability of the robot to recognise an
 - Label a dataset of 1000 images using a Python tool
 - Sanitise images for training by fixing the aspect ratio, and binning to a lower resolution
 - Apply YOLO algorithm to obtain weights and biases (training results below):
-<div style="display: flex; flex-wrap: wrap;">
-    <img src="/assets/3YP/Training.png" alt="Domestic Care Robot, BILLY" style="flex: 1; max-width: 85%;" />
+
+<div style="display: grid; grid-template-columns: 1fr;">
+  <img src="/assets/3YP/Training.png" alt="YOLO Training" style="max-width: 85%;">
 </div>
 - Adjust hyper-parameters (batch size and epoch number) to improve the mean average precision
 - Test trained algorithm on several inference tasks, including video feed (static test below)
-<div style="display: flex; flex-wrap: wrap;">
-    <img src="/assets/3YP/Inference.png" alt="Domestic Care Robot, BILLY" style="flex: 1; max-width: 85%;" />
+
+<div style="display: grid; grid-template-columns: 1fr;">
+  <img src="/assets/3YP/Inference.png" alt="Inference Test" style="max-width: 85%;">
 </div>
 
 
 #### Path Planning
 This was an important part of the autonomy of our robot and involved a literature review of computationally efficient methods to produce optimal paths through a known space. Critical to this is configuration space, which reduces the problem to a single point moving through a 3D space. This concept involves 'padding' each object in the map with additional space to account for places the robot can't access due to its size:
-<div style="display: flex; flex-wrap: wrap;">
-    <img src="/assets/3YP/C-Space.png" alt="Domestic Care Robot, BILLY" style="flex: 1; max-width: 65%;" />
+
+<div style="display: grid; grid-template-columns: 1fr;">
+  <img src="/assets/3YP/C-Space.png" alt="Configuration space" style="max-width: 65%;">
 </div>
 
 This C-Space is then sampled randomly to produce a graph of the space from which a simple path-finding algorithm such as A* can be implemented from the start node to the end node.

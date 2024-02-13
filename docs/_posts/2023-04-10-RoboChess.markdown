@@ -24,19 +24,16 @@ I proposed and led this project for a full year with the Robotics and Additive M
 - Advertised the project at Oxford's first RepRap festival and got featured by a popular 3D printing YouTuber!
 
 ### Gallery
-<!-- ![Early Test](/assets/RoboChess/EarlyTest.gif) ![Mechanism 1](/assets/RoboChess/Mech1.PNG)
-![Mechanism 2](/assets/RoboChess/Mech2.PNG) ![YouTube feature](/assets/RoboChess/YouTube.png)
-![The team](/assets/RoboChess/TheTeam.jpg) -->
-
-
-<div style="display: flex; flex-wrap: wrap;">
-    <img src="/assets/RoboChess/TheTeam.jpg" alt="RoboChess Team" style="flex: 1; max-width: 50%;" />
-    <img src="/assets/RoboChess/YouTube.png" alt="YouTube feature" style="flex: 1; max-width: 50%;" />
+<div style="display: grid; grid-template-columns: 0.5fr 0.589fr;">
+  <img src="/assets/RoboChess/TheTeam.jpg" alt="RoboChess Team" style="max-width: 100%;">
+  <img src="/assets/RoboChess/YouTube.png" alt="YouTube feature" style="max-width: 100%;">
 </div>
 
-![Single Image](/assets/RoboChess/EarlyTest.gif)
+<div style="display: grid; grid-template-columns: 1fr;">
+  <img src="/assets/RoboChess/EarlyTest.gif" alt="Early board test" style="max-width: 100%;">
+</div>
 
-<div style="display: flex; flex-wrap: wrap;">
-    <img src="/assets/RoboChess/Mech2.PNG" alt="Mechanism 1" style="flex: 1; max-width: 50%;" />
-    <img src="/assets/RoboChess/Mech1.PNG" alt="Mechanism 2" style="flex: 1; max-width: 50%;" />
+<div style="display: grid; grid-template-columns: 0.5fr 0.5fr;">
+  <img src="/assets/RoboChess/Mech2.PNG" alt="Mechanism 1" style="max-width: 100%;">
+  <img src="/assets/RoboChess/Mech1.PNG" alt="Mechanism 2" style="max-width: 100%;">
 </div>
